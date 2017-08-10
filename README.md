@@ -1,5 +1,5 @@
-# Product Name
-> Calculate what your weight (or any weight!) would be on a another planet.
+# Astro Weight Calculator
+> Calculate what your weight (or any weight!) would be on another planet.
 
 This was my first project at Origin Code Academy. This Astro Weight Calculator was created using HTML, CSS, Bootstrap, jQuery, and JavaScript.
 
@@ -20,5 +20,7 @@ This app relies on jQuery and Javascript for its functionality and HTML, CSS, an
 ## Contact Information
 
 Twitter: [@adriftinthesea](https://twitter.com/adriftinthesea)
+
 Email: z@zamarise.com
+
 GitHub:[https://github.com/zamarise](https://github.com/zamarise/)
