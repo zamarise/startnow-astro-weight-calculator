@@ -15,7 +15,13 @@ Download all associated files and load them up in your favorite text editor!
 
 ## Development setup
 
-This app relies on jQuery and Javascript for its functionality and HTML, CSS, and Bootstrap for its design. To run the calcuator use a local server such as [nodemon](https://www.npmjs.com/package/nodemon).
+This app relies on jQuery and Javascript for its functionality and HTML, CSS, and Bootstrap for its design. To run the calcuator use a simple static server.
+
+```sh
+npm i -g node-static
+// cd to-your-web-folder
+static
+```
 
 ## Contact Information
 
