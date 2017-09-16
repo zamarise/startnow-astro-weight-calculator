@@ -3,3 +3,4 @@ bower_components
 *.log
 .vscode
 DS_Store
+.eslintignore

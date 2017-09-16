@@ -4,7 +4,7 @@ var planets = [
   ['Neptune', 1.148],
   ['Uranus', 0.917],
   ['Saturn', 1.139],
-  ['Jupiter', 2.640],
+  ['Jupiter', 2.64],
   ['Mars', 0.3895],
   ['Moon', 0.1655],
   ['Earth', 1],
@@ -17,10 +17,10 @@ var planets = [
 var sel = document.getElementById('planets');
 var fragment = document.createDocumentFragment();
 planets.forEach(function(x, index) {
-    var opt = document.createElement('option');
-    opt.innerHTML = x[0];
-    opt.value = x[1];
-    fragment.appendChild(opt);
+  var opt = document.createElement('option');
+  opt.innerHTML = x[0];
+  opt.value = x[1];
+  fragment.appendChild(opt);
 });
 sel.appendChild(fragment);
 
@@ -32,28 +32,24 @@ function calculateWeight(userWeight, selectedPlanetName) {
     var pair = planets[index]; // ['Pluto', 0.06]
     var name = pair[0]; // 'Pluto'
     var weight = pair[1]; // 0.06
-    
+
     if (selectedPlanetName === name) {
       planetWeight = weight;
     }
-
   }
   console.log('selectedPlanetName', selectedPlanetName);
   return userWeight * planetWeight;
-
 }
 
 //Fires when button is clicked
 function handleClickEvent(e) {
-
   var userWeight = $('#userWeight').val();
   var planetName = $('#planets :selected').text();
   var result = calculateWeight(userWeight, planetName);
-  var sentence = "If you were on " + planetName + ", you would weigh " + result + " pounds!";
+  var sentence = 'If you were on ' + planetName + ', you would weigh ' + result + ' pounds!';
   $('#output').text(sentence);
-
 }
 
 //button to use handleClickEvent
 var button = document.getElementById('calculateWeight');
-button.onclick = handleClickEvent
+button.onclick = handleClickEvent;
